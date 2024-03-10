@@ -1,0 +1,3 @@
+const inputNumber = getUserInputNumer();
+
+if()
