@@ -1,7 +1,9 @@
 function sendRequest(url) {
-    return new Promise((resolve, reject) => {
-        return fetch(url).then(response => {
-            
-        }
-    }
+  return fetch(url).then(function (response) {
+    return response.json();
+  });
 }
+
+module.exports = {
+  sendRequest: sendRequest,
+};
