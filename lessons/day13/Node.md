@@ -10,3 +10,10 @@ static variable - is a shared value belongs to class, NOT object --> khi trực 
 - static chỉ accept static
 - Static ko override được
 
+
+- Parent class has constructor, child class has no constructor
+--> No problem, when init child class, has to call constructor of parent class
+- Parent class has constructor, child class has constructor
+--> Constructor of child class sẽ gọi constructor của parent class trước (super...)
+- Parent class has no constructor, child class has constructor
+--> Con chỉ cần gọi super của parent nhưng constructor này ko có đối số

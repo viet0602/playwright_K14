@@ -1,12 +1,18 @@
 export default class Employee {
-    protected name: string;
-    protected salary: number;
 
-    getName(): string {
-        return this.name;
-    }
+  protected name: string;
+  protected salary: number;
 
-    getSalary(): number {
-        return this.salary;
-    }
+  constructor(name: string, salary: number) {
+    this.name = name;
+    this.salary = salary;
+  }
+  getName(): string {
+    return this.name;
+  }
+
+  getSalary(): number {
+    return this.salary;
+  }
+
 }
